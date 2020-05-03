@@ -1,9 +1,29 @@
-# Displaying TIFF with tiff.js and HTML5 Canvas
+This repository includes two modules
 
-This is a demo of [tiff.js](https://github.com/seikichi/tiff.js) for decompressing and displaying a TIFF Group 4 image in a browser. The original image is 300dpi, and so cannot fit onto the screen. Therefore while the `<canvas>` is full-size, its `style` is set to 30%.
+# Embedding tiff to html canvas
 
-![Alt "TIFF in Canvas"](https://github.com/johnthad/tiff-demo/blob/master/TIFF%20in%20Hi-res%20canvas.png "TIFF in Canvas")
+Using this module any tiff can be uploaded and embedded into html Canvas.
 
-My thanks to Miles Elam (@mileselam) for explaining to me how to make a [high resolution `<canvas>`](https://twitter.com/mileselam/status/860623624989835264).
+1. Spin off http server using this command in root directory
+*http-server -a localhost -p 8000 -c-1*
 
-I have written up more about this demo on [Medium](https://medium.com/@thad.humphries/displaying-tiff-with-tiff-js-and-html5-canvas-dd02fe9f1a5d).
+2. Navigate to tiffcanvas.html in browser 
+
+
+# Render mbtiles on map based html file 
+
+This module takes mbtiles and does indexing before rendering it to map.
+renderTileOnMap.sh script is used for that purpose 
+
+1. Make script executable 
+  *chmod +x renderTileOnMap.sh*
+  
+2. Provide mapbox access token using 
+  export MAPBOX_ACCESS_TOKEN=*your_mapbox_access_token*
+  
+3. Run script 
+   *./renderTileOnMap.sh*
+   
+This will render mbtiles on map in browser, by default on port 3000
+
+
