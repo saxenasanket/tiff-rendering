@@ -1,6 +1,6 @@
 This repository includes two modules
 
-# Embedding tiff to html canvas
+# Embedding tiff into HTML canvas
 
 Using this module any tiff can be uploaded and embedded into html Canvas.
 
