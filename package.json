@@ -1,0 +1,25 @@
+{
+  "name": "tiff-demo",
+  "version": "1.0.0",
+  "description": "This is a demo of [tiff.js](https://github.com/seikichi/tiff.js) for decompressing and displaying a TIFF Group 4 image in a browser. The original image is 300dpi, and so cannot fit onto the screen. Therefore while the `<canvas>` is full-size, its `style` is set to 30%.",
+  "main": "tiff.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnthad/tiff-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnthad/tiff-demo/issues"
+  },
+  "homepage": "https://github.com/johnthad/tiff-demo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "tiff": "^4.0.0",
+    "tiff.js": "^1.0.0"
+  }
+}
